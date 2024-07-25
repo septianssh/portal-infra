@@ -1,0 +1,40 @@
+.DataTable {
+  width: 100%;
+  height: 100%;
+}
+
+.dataGrid {
+  height: 100%;
+}
+
+.action-container {
+  display: flex;
+  align-items: center;
+  justify-content: left;
+  gap: 10px;
+  height: 100%;
+  width: 100%;
+}
+
+.action-icon {
+  cursor: pointer;
+}
+
+.action-icon .update,
+.action-icon .delete {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  transition: background-color 0.3s ease;
+}
+
+.action-icon .update:hover {
+  background-color: rgba(34, 197, 94, 0.1); /* Light green */
+}
+
+.action-icon .delete:hover {
+  background-color: rgba(239, 68, 68, 0.1); /* Light red */
+}

@@ -1,0 +1,5 @@
+@media (min-width: 768px) {
+  .ml-80 {
+    margin-left: 20rem; /* 80 in Tailwind is 20rem */
+  }
+}

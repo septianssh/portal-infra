@@ -1,0 +1,40 @@
+include:
+- project: altonetwork/devops/devops-centralized-pipeline
+  file: gitlab-ci/pipeline-it-automation.yml
+  
+# image: docker:latest
+
+# services:
+#   - docker:dind
+
+# variables:
+#   GKE_PROJECT: $GKE_PROJECT
+#   GKE_CLUSTER: $GKE_CLUSTER
+#   GKE_ZONE: $GKE_ZONE
+#   GCR_IMAGE: gcr.io/$GKE_PROJECT/client
+
+# before_script:
+#   - docker info
+#   - echo $GCP_SERVICE_KEY | base64 -d > ${HOME}/gcp-key.json
+#   - gcloud auth activate-service-account --key-file ${HOME}/gcp-key.json
+#   - gcloud --quiet config set project $GKE_PROJECT
+#   - gcloud --quiet config set compute/zone $GKE_ZONE
+#   - gcloud --quiet container clusters get-credentials $GKE_CLUSTER
+#   - echo $CI_REGISTRY_PASSWORD | docker login -u $CI_REGISTRY_USER --password-stdin $CI_REGISTRY
+
+# stages:
+#   - build
+#   - deploy
+
+# build:
+#   stage: build
+#   script:
+#     - docker build -t $GCR_IMAGE:$CI_COMMIT_SHORT_SHA -f client/Dockerfile .
+#     - docker push $GCR_IMAGE:$CI_COMMIT_SHORT_SHA
+
+# deploy:
+#   stage: deploy
+#   script:
+#     - kubectl set image deployment/client-deployment client=$GCR_IMAGE:$CI_COMMIT_SHORT_SHA
+#   only:
+#     - main

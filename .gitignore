@@ -1,0 +1,6 @@
+
+./client/node_modules/
+./server-legacy-express/node_modules/
+.env
+# ./server/.env
+# ./server-legacy-express/.env

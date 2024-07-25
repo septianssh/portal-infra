@@ -1,0 +1,5 @@
+.preformatted-text {
+  white-space: pre-wrap; /* This handles new lines */
+  word-wrap: break-word; /* This handles long words and prevents overflow */
+  padding: 16px;
+}

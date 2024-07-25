@@ -1,0 +1,19 @@
+/* Ensure the container takes full height and uses flexbox layout */
+.container {
+  height: 100%;
+}
+
+/* Content area should take the remaining space */
+.content {
+  flex-grow: 1;
+  overflow: hidden; /* Prevents content overflow */
+  display: flex;
+  flex-direction: column;
+}
+
+/* DataGrid container */
+.dataGridContainer {
+  flex-grow: 1;
+  overflow-x: auto;
+  overflow-y: auto;
+}

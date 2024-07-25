@@ -1,0 +1,42 @@
+.tab-system .tabs {
+  display: flex;
+  align-items: center;
+  padding: 5px;
+}
+
+.tab {
+  padding: 10px;
+  margin-right: 5px;
+  cursor: pointer;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  position: relative;
+  transition: all 0.15s ease-out;
+}
+
+.tab.closing {
+  transform: scale(0);
+  opacity: 0;
+  height: 0;
+  padding: 0 10px; /* Keeps the closing animation smooth */
+}
+
+.tab-active {
+  background-color: #e0e0e0;
+}
+
+.close-tab {
+  margin-left: 10px;
+  color: red;
+  border: none;
+  background: none;
+  cursor: pointer;
+}
+
+.add-tab {
+  margin-left: auto;
+  padding: 5px 10px;
+  cursor: pointer;
+  border: 1px solid green;
+  border-radius: 5px;
+}

@@ -1,0 +1,13 @@
+# Stage 1: Build the React application
+FROM node:alpine
+
+WORKDIR /app
+
+COPY package*.json ./
+RUN npm install
+
+COPY . ./
+
+# Stage 2: Run Start (Temporary)
+EXPOSE 3001
+CMD ["sh", "-c", "PORT=3001 npm start"]

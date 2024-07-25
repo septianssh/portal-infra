@@ -1,0 +1,14 @@
+.div {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 30px;
+}
+
+.div span:first-child {
+  font-weight: bold;
+}
+
+.div span:last-child {
+  font-size: 14px;
+}
